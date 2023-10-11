@@ -1,0 +1,19 @@
+version: '3'
+services:
+  bot:
+    image: easychen/botchan
+    environment:
+      - MP_APPID=wxd0960911698aa555
+      - MP_APPSECRET=cb111137068a47934d6516c58893adb8
+      - MP_TOKEN=cb111137068a47934d6516c58893adb8
+      - DEFAULT_API_URL=https://oa.api2d.net
+      - DEFAULT_API_WORD=
+      - DEFAULT_API_KEY=fk...
+      - LOCK_API_URL=true
+      - LOCK_API_KEY=true
+      - LOCK_MODEL=true
+      - DB_TYPE=json
+    volumes:
+      - ./data:/data
+    ports:
+      - 80:9000
